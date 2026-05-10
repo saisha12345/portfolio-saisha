@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Portfolio page loaded');
-    
-    // smooth scrooll
-    document.documentElement.style.scrollBehavior = 'smooth';
+  console.log('Saisha portfolio page loaded');
 
-});
-
-
-/* make videos clickable */ 
-document.querySelectorAll('.project-images').forEach(project => {
-  project.addEventListener('click', () => {
-    window.open(project.dataset.link, '_blank', 'noopener');
-  });
+  // Smooth scrolling for in-page links.
+  document.documentElement.style.scrollBehavior = 'smooth';
 });
