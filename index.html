@@ -71,41 +71,79 @@
         <section id="projects" aria-labelledby="projects-title">
             <div class="section-heading">
                 <p class="eyebrow">Selected work</p>
-                <h2 id="projects-title">AI design and technical systems projects</h2>
+                <h2 id="projects-title">AI-native prototypes for expression, focus, and clarity</h2>
             </div>
 
             <article class="project featured-project">
                 <div class="project-header">
-                    <h3 class="project-title">Moodboard Buddy</h3>
-                    <span class="project-tag">AI Expression · Visual Design · JavaScript</span>
+                    <h3 class="project-title">Journal Scrapbook Buddy</h3>
+                    <span class="project-tag">AI Expression · Journaling UX · JavaScript</span>
                 </div>
 
                 <p class="project-description">
-                    A playful AI-inspired web app that turns a user's current feeling into a shareable moodboard card with a visual world,
-                    color palette, mascot, caption, focus ritual, and playlist vibe. I built it to explore how AI can support self-expression
-                    without making the experience feel cold, generic, or overly automated.
+                    A playful AI-inspired journaling prototype where users write what they are carrying, select multiple colors and a vibe,
+                    generate a personalized scrapbook page, save scraps to a growing local book, and export the current page as a PDF.
+                    I built it to explore how AI can support reflection and self-expression without making the experience feel clinical.
                 </p>
 
-                <div class="project-links" aria-label="Moodboard Buddy links">
+                <div class="project-links" aria-label="Journal Scrapbook Buddy links">
                     <a href="https://saisha12345.github.io/moodboard-buddy/" target="_blank" rel="noopener noreferrer">Live demo</a>
                     <a href="https://github.com/saisha12345/moodboard-buddy" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                    <a href="https://github.com/saisha12345/moodboard-buddy/blob/main/DESIGN_PROCESS.md" target="_blank" rel="noopener noreferrer">Design process</a>
                 </div>
 
                 <div class="project-panel grid-panel">
                     <div>
                         <p class="panel-kicker">Design signal</p>
                         <ul>
-                            <li>Designed an emotional input flow that transforms a messy feeling into structured creative output.</li>
-                            <li>Created a cute visual system with mood chips, palettes, mascots, captions, and shareable result cards.</li>
-                            <li>Balanced delight with usability through clear labels, responsive layout, and simple interaction states.</li>
+                            <li>Designed a repeatable journaling system with emotional input, multi-color customization, AI-style reflection, save-to-book, and PDF export.</li>
+                            <li>Documented product framing, low-fidelity wireframes, interaction states, content design decisions, prompt strategy, and accessibility notes.</li>
+                            <li>Created a cute visual language that makes reflection feel approachable while keeping the user in control.</li>
                         </ul>
                     </div>
                     <div>
                         <p class="panel-kicker">Responsible AI framing</p>
                         <ul>
-                            <li>Frames outputs as creative inspiration, not therapy, diagnosis, or life advice.</li>
-                            <li>Keeps the MVP local and transparent while modeling where AI-generated content would fit.</li>
-                            <li>Uses human-readable content patterns so users can review before copying or sharing.</li>
+                            <li>Frames outputs as creative reflection, not therapy, diagnosis, or life advice.</li>
+                            <li>Uses local browser storage for saved scraps in the prototype.</li>
+                            <li>Models a future secure AI architecture where journal content would be handled through a backend, not exposed client-side.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project featured-project">
+                <div class="project-header">
+                    <h3 class="project-title">Focus Bakery</h3>
+                    <span class="project-tag">AI Focus Companion · Gamified UX · JavaScript</span>
+                </div>
+
+                <p class="project-description">
+                    A bakery-themed focus companion where each completed focus round unlocks an ingredient. After five rounds,
+                    the user bakes a cute treat and adds it to a growing shop collection. The prototype reframes productivity as
+                    a warm progression system with AI-style reflection instead of a pressure-based task tracker.
+                </p>
+
+                <div class="project-links" aria-label="Focus Bakery links">
+                    <a href="focus-bakery/" target="_blank" rel="noopener noreferrer">Live demo</a>
+                    <a href="focus-bakery/DESIGN_PROCESS.md" target="_blank" rel="noopener noreferrer">Design process</a>
+                </div>
+
+                <div class="project-panel accent grid-panel">
+                    <div>
+                        <p class="panel-kicker">Interaction design</p>
+                        <ul>
+                            <li>Designed a clear loop: focus round → ingredient → recipe → baked item → shop collection.</li>
+                            <li>Created a scalable recipe system with multiple bakery items, progress states, collection cards, and local persistence.</li>
+                            <li>Added AI-style bakery notes so users can turn completed work into warm, reviewable reflection.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="panel-kicker">Meta alignment</p>
+                        <ul>
+                            <li>Shows systems thinking, functional prototyping, UX writing, visual design, and front-end implementation.</li>
+                            <li>Uses playful interaction patterns to make productivity feel motivating without relying on guilt or pressure.</li>
+                            <li>Documents wireframes, content decisions, accessibility considerations, and future AI integration paths.</li>
                         </ul>
                     </div>
                 </div>
@@ -128,7 +166,7 @@
                     <a href="https://github.com/saisha12345/meeting-to-action-ai-project" target="_blank" rel="noopener noreferrer">GitHub repo</a>
                 </div>
 
-                <div class="project-panel accent grid-panel">
+                <div class="project-panel soft grid-panel">
                     <div>
                         <p class="panel-kicker">User problem</p>
                         <ul>
@@ -158,34 +196,12 @@
                     <code>postTweet</code> and <code>getHomeTimeline</code>, and benchmarked relational versus in-memory storage tradeoffs.
                 </p>
 
-                <div class="project-panel soft">
+                <div class="project-panel">
                     <p class="panel-kicker">Systems thinking</p>
                     <ul>
                         <li>Benchmarked 1M tweet insertions and 50K timeline requests.</li>
                         <li>Improved insertion throughput from approximately 3,906 to 5,574 calls per second using Redis.</li>
                         <li>Evaluated read/write performance tradeoffs for high-volume social media workloads.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="project">
-                <div class="project-header">
-                    <h3 class="project-title">MongoDB News Classification Data Pipeline</h3>
-                    <span class="project-tag">Python · MongoDB · JSON · Aggregation Pipelines</span>
-                </div>
-
-                <p class="project-description">
-                    A document-store data pipeline for transforming raw sarcasm headline data into structured MongoDB-ready
-                    documents. I cleaned malformed URLs, extracted source domains, created nested headline records, and wrote
-                    aggregation pipelines to analyze sarcasm rates and keyword trends.
-                </p>
-
-                <div class="project-panel">
-                    <p class="panel-kicker">Information architecture</p>
-                    <ul>
-                        <li>Designed a flexible document schema with nested records and derived text features.</li>
-                        <li>Used <code>mongoimport</code>, indexing, and aggregation stages including <code>$unwind</code>, <code>$group</code>, and <code>$project</code>.</li>
-                        <li>Compared modeling tradeoffs for nested retrieval, analytics queries, and scalable ingestion.</li>
                     </ul>
                 </div>
             </article>
